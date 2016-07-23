@@ -1,0 +1,65 @@
+html {
+  font-size: 62.5%; }
+
+body {
+  color: #4c4c4c;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  letter-spacing: 0.1em;
+  background-color: #f9f8f6; }
+
+/**************************************/
+header {
+  margin: 40px; }
+  header #header_in .sp_navi_li {
+    width: 180px;
+    position: absolute;
+    top: 50px;
+    right: 2%;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0; }
+    header #header_in .sp_navi_li li {
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+      header #header_in .sp_navi_li li a {
+        display: block;
+        padding: 10px 8px;
+        border-bottom: 1px solid #eee;
+        font-size: 14px;
+        text-decoration: none; }
+  header #header_in .pc_navi_li {
+    margin: 20px;
+    padding: 0; }
+    header #header_in .pc_navi_li li {
+      list-style: none;
+      margin: 5px 5px 0 0;
+      padding: 0; }
+      header #header_in .pc_navi_li li a {
+        float: left;
+        padding-right: 20px; }
+      header #header_in .pc_navi_li li a:hover {
+        opacity: 0.5; }
+  header #header_in .pc_navi_li2 {
+    margin: 20px;
+    padding: 0; }
+    header #header_in .pc_navi_li2 li {
+      list-style: none;
+      margin: 5px 2px 0 0;
+      padding: 0; }
+      header #header_in .pc_navi_li2 li a {
+        float: left;
+        padding-right: 15px; }
+      header #header_in .pc_navi_li2 li a:hover {
+        opacity: 0.5; }
+  @media (max-width: 550px) {
+    header #header_in .pc_navi {
+      display: none; } }
+  @media (min-width: 550px) {
+    header #header_in .sp_navi {
+      display: none; } }
+  header #header_in #header_in {
+    padding: 5px 0 10px 0; }
+
+/*# sourceMappingURL=style.css.map */
