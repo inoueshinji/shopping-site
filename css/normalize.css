@@ -425,3 +425,9 @@ td,
 th {
   padding: 0;
 }
+
+.clearfix::after {
+    clear: both;
+    content: "";
+    display: block;
+}
