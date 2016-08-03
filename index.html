@@ -40,10 +40,19 @@
       <ul class="sp_sns_li">
       <li><a href="facebool.com"><img class="u-max-full-width" src="images/top_sp/fb.png" alt="fb" srcset="images/top_sp/fb@2x.png 2x" /></a></li>
       <li><a href="instagaram.com"><img class="u-max-full-width" src="images/top_sp/insta.png" alt="insta" srcset="images/top_sp/insta@2x.png 2x" /></a></li>
-      <li id="sp_navi_btn"><img class="u-max-full-width" src="images/top_sp/menu_icon.png" alt="sp_navi" srcset="images/top_sp/menu_icon@2x.png 2x" /></li>
+      <li><img id="sp_navi_btn" class="u-max-full-width" src="images/top_sp/menu_icon.png" alt="sp_navi" srcset="images/top_sp/menu_icon@2x.png 2x" /></li>
       </ul>
       
       </div>
+          <!--<div class=“toggle”>-->
+          <div class="toggle">
+          <ul class="sp_navi_li">
+                <li class="#"><a href="index.html">ログイン</a></li>
+                <li class="#"><a href="news.html">カート</a></li>
+                <li class="#"><a href="company.html">マイページ</a></li>
+                <li class="#"><a href="company.html">ショッピングガイド</a></li>
+          </ul>
+          </div>
     
       <div class="pc_navi">
 
@@ -60,6 +69,8 @@
         </ul>
         
       </div>
+      
+      
 
       </div>
       </div>
@@ -271,21 +282,27 @@
     <div class="pagetop_navi">
     <img class="u-max-full-width pt" src="images/top/pagetop.png" alt="pagetop_img"/>
     </div>
-    <hr class="line"></hr>
+    <hr class="line">
     <div class="ft">
     <p>特定商取引に基づく表記　・　プライバシーポリシー　・　マイページ</p>
     <p><span>copyright (C) APPLE BERRY all rights reserved.</span></p>
-    </div>
     </div>
     
     
     
     </footer>
-
-
-
-
+    
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    
+    <script>
+    $(document).ready(function(){
+    $("#sp_navi_btn").click(function(){
+    $(".toggle").slideToggle();
+     });
+     });
+    </script>
+
+
     <script src="owl.carousel/owl.carousel.min.js"></script>
     <script>
       $(document).ready(function(){
@@ -300,6 +317,4 @@
 
 
     </body>
-    
-    
     </html>
