@@ -142,6 +142,19 @@ header #header_in .pc_navi .pc_navi_li2 li a:hover {
     display: none;
   }
 }
+@media (max-width: 550px) {
+  .toggle {
+    display: none;
+    position: relative;
+  }
+
+  .sp_navi_li {
+    display: block;
+    position: relative;
+    top: -30px;
+    left: 50px;
+  }
+}
 .newitems {
   padding: 40px 0 20px 0;
   text-align: center;
@@ -466,19 +479,6 @@ p {
   color: #887f69;
 }
 
-@media (max-width: 550px) {
-  .toggle {
-    display: none;
-    position: relative;
-  }
-
-  .sp_navi_li {
-    display: block;
-    position: relative;
-    top: -20px;
-    left: 30px;
-  }
-}
 .pan {
   margin: 0 0 10px 0;
   background-Color: #e2ddd4;

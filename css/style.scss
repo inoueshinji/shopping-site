@@ -172,7 +172,18 @@ header{
      }  
      }
 
-
+     @media (max-width: 550px) {
+     .toggle {
+      display: none;
+      position:relative;
+      }
+     .sp_navi_li {
+      display: block;
+      position: relative;
+      top: -30px;
+      left: 50px;
+      }
+      }
   
 
 // header
@@ -519,19 +530,6 @@ header{
      }
     }
     
-    
-     @media (max-width: 550px) {
-     .toggle {
-      display: none;
-      position:relative;
-      }
-     .sp_navi_li {
-      display: block;
-      position: relative;
-      top: -20px;
-      left: 30px;
-      }
-      }
     
     // top-page
     
