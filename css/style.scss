@@ -520,6 +520,19 @@ header{
     }
     
     
+     @media (max-width: 550px) {
+     .toggle {
+      display: none;
+      position:relative;
+      }
+     .sp_navi_li {
+      display: block;
+      position: relative;
+      top: -20px;
+      left: 30px;
+      }
+      }
+    
     // top-page
     
     .pan{
@@ -803,17 +816,3 @@ header{
       vertical-align: top;
       border: 1px solid $subColor2;
       }
-
-/* 山田追記 */
-@media (max-width: 550px) {
-.toggle {
-display: none;
-position:relative;
-}
-.sp_navi_li {
-display: block;
-position: relative;
-top: -20px;
-left: 30px;
-}
-}
