@@ -12,37 +12,39 @@ body {
 
 /**************************************/
 header {
-  margin: 40px;
+  margin: 40px 0 40px 0;
 }
-@media (max-width: 550px) {
-  header #header_in .logo {
+
+@media (max-width: 750px) {
+  #header_in .logo {
+    position: static;
     text-align: center;
   }
-  header #header_in .logo {
+  #header_in .logo {
     text-align: center;
   }
-  header #header_in .sp_sns_li {
+  #header_in .sp_sns_li {
     list-style: outside none none;
     text-align: center;
   }
-  header #header_in .sp_sns_li li {
+  #header_in .sp_sns_li li {
     display: inline-block;
     margin: 10px auto;
   }
-  header #header_in .sp_navi ul {
+  #header_in .sp_navi ul {
     display: none;
   }
-  header #header_in .sp_sns {
+  #header_in .sp_sns {
     padding: 0px 10px 0px 0px;
   }
-  header #header_in .sp_sns_li li {
+  #header_in .sp_sns_li li {
     padding: 0px 10px 0px 0px;
   }
-  header #header_in .sp_navi {
+  #header_in .sp_navi {
     padding: 0px;
   }
 }
-header #header_in .sp_navi_btn {
+#header_in .sp_navi_btn {
   width: 180px;
   position: absolute;
   top: 50px;
@@ -51,63 +53,42 @@ header #header_in .sp_navi_btn {
   margin: 0;
   padding: 0;
 }
-header #header_in .sp_navi_btn li {
+#header_in .sp_navi_btn li {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-header #header_in .sp_navi_btn li a {
+#header_in .sp_navi_btn li a {
   display: block;
   padding: 10px 8px;
   border-bottom: 1px solid #eee;
   font-size: 14px;
   text-decoration: none;
 }
-header #header_in .pc_navi .pc_navi_li {
-  margin: 20px;
-  padding: 0;
+#header_in .pc_navi {
+  margin-top: 22px;
+  display: flex;
+  justify-content: flex-end;
 }
-header #header_in .pc_navi .pc_navi_li li {
-  list-style: none;
-  margin: 5px 5px 0 0;
-  padding: 0;
-}
-header #header_in .pc_navi .pc_navi_li li a {
-  float: left;
-  padding-right: 20px;
-}
-header #header_in .pc_navi .pc_navi_li li a:hover {
+#header_in .pc_navi a:hover {
   opacity: 0.5;
 }
-header #header_in .pc_navi .pc_navi_li2 {
-  margin: 0px;
-  padding: 0;
+@media (max-width: 750px) {
+  #header_in .pc_navi {
+    display: none;
+  }
 }
-header #header_in .pc_navi .pc_navi_li2 li {
-  list-style: none;
-  margin: 5px 2px 0 0;
-  padding: 0;
-}
-header #header_in .pc_navi .pc_navi_li2 li a {
-  float: left;
+#header_in .pc_navi1 {
   padding-right: 15px;
 }
-header #header_in .pc_navi .pc_navi_li2 li a:hover {
-  opacity: 0.5;
-}
-@media (max-width: 550px) {
-  header #header_in .pc_navi {
+@media (min-width: 750px) {
+  #header_in .sp_navi {
     display: none;
   }
-}
-@media (min-width: 550px) {
-  header #header_in .sp_navi {
+  #header_in .sp_sns {
     display: none;
   }
-  header #header_in .sp_sns {
-    display: none;
-  }
-  header #header_in #header_in {
+  #header_in #header_in {
     padding: 5px 0 10px 0;
   }
 }
@@ -137,12 +118,12 @@ header #header_in .pc_navi .pc_navi_li2 li a:hover {
   text-decoration: none;
 }
 
-@media (min-width: 550px) {
+@media (min-width: 750px) {
   .toggle {
     display: none;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 750px) {
   .toggle {
     display: none;
     position: relative;

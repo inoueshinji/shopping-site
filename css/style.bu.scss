@@ -29,16 +29,13 @@ body{
 
 
 header{
-    margin: 40px 0 40px 0;
-      }
+    margin: 40px;
+    
     #header_in{
-     
       
-      @media (max-width: 750px) {
-      .logo{
-       position:static;
-       text-align:center
-       }
+      @media (max-width: 550px) {
+      .logo{ text-align:center
+      }
       .logo { text-align: center; }
       .sp_sns_li { list-style: outside none none; text-align:center;}
       .sp_sns_li li{display:inline-block; margin:10px auto;}
@@ -46,8 +43,7 @@ header{
       .sp_sns { padding: 0px 10px 0px 0px; }
       .sp_sns_li li { padding: 0px 10px 0px 0px; }
       .sp_navi { padding: 0px; }
-      }
-      
+    }
     
      .sp_navi_btn{     
       width: 180px;
@@ -78,24 +74,55 @@ header{
     
    }
    
-       .pc_navi{
-        margin-top:22px;
-        display :flex;
-        justify-content: flex-end;
+   .pc_navi{
+     
+     .pc_navi_li{
+      margin: 20px;
+      padding:0;
+
+      li{
+        list-style:none;
+        margin: 5px 5px 0 0;
+        padding: 0;
+
+        a{
+          float: left;
+          padding-right: 20px;
+        }
+
         a:hover{
           opacity: 0.5 ;
         }
-       @media (max-width: 750px){
-       display: none;
-       }
-       }
-       
-       .pc_navi1{
-        padding-right:15px;
-       }
-       
+      }
+    }
+
+     .pc_navi_li2{
+      text-align: right;
+      margin: 0px;
+      padding:0;
+
+      li{
+        display: inline-box;
+        list-style:none;
+        margin: 5px 2px 0 0;
+        padding: 0;
+
+        a{
+          float: left;
+          padding-right: 15px;
+        }
+
+        a:hover{
+          opacity: 0.5 ;
+        }
+      }    
+    }    
+      @media (max-width: 550px) {  
+      display: none;
+      }
+      }
   
-    @media (min-width: 750px) {
+    @media (min-width: 550px) {
     .sp_navi {
       display: none;      
       }
@@ -109,7 +136,8 @@ header{
     
       } 
 
-   }
+   }  
+  }
 
     .sp_navi_li{
     width: 180px;
@@ -140,13 +168,13 @@ header{
   }
  
  
-   @media (min-width: 750px) {
+   @media (min-width: 550px) {
      .toggle{
      display: none;
      }  
      }
 
-     @media (max-width: 750px) {
+     @media (max-width: 550px) {
      .toggle {
       display: none;
       position:relative;
@@ -158,8 +186,6 @@ header{
       left: 50px;
       }
       }
-     
-
   
 
 // header
@@ -791,3 +817,10 @@ header{
       border: 1px solid $subColor2;
       }
 
+@media (max-width: 1280px)
+{
+    .pc_navi_li
+    {
+         display: none;
+    }
+}
