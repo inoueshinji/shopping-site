@@ -194,7 +194,7 @@ header{
     }
     
     .newitems_contens{
-     background-color:white;
+     
     }
     
     .newitems_li{
@@ -204,6 +204,7 @@ header{
     
     
     li {
+    background-color:white;
     text-align: center;
     width: 210px;
     border:1px solid $baseColor;
@@ -742,6 +743,7 @@ header{
        @media (max-width: 550px) {
         .crt{
         text-align: center;
+        padding-left: 30px;
         }
        }
        

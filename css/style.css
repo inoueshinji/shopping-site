@@ -160,16 +160,13 @@ header {
   letter-spacing: 0.2rem;
 }
 
-.newitems_contens {
-  background-color: white;
-}
-
 .newitems_li {
   text-align: center;
   list-style: none;
   margin: 0;
 }
 .newitems_li li {
+  background-color: white;
   text-align: center;
   width: 210px;
   border: 1px solid #f9f8f6;
@@ -670,6 +667,7 @@ p {
 @media (max-width: 550px) {
   .crt {
     text-align: center;
+    padding-left: 30px;
   }
 }
 @media (max-width: 550px) {
